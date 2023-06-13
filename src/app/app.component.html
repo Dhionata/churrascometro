@@ -2,15 +2,18 @@
     <form>
         <mat-form-field appearance="fill">
             <mat-label>Quantidade de Homens</mat-label>
-            <input matInput placeholder="" name="qtdHomens" [(ngModel)]="qtdHomens">
+            <input matInput placeholder="Quantidade de homens presentes" name="qtdHomens" [(ngModel)]="qtdHomens"
+                required="true">
         </mat-form-field>
 
         <mat-form-field appearance="fill">
             <mat-label>Quantidade de Mulheres</mat-label>
-            <input matInput placeholder="" name="qtdMulheres" [(ngModel)]="qtdMulheres">
+            <input matInput placeholder="Quantidade de mulheres presentes" name="qtdMulheres" [(ngModel)]="qtdMulheres"
+                required="true">
         </mat-form-field>
 
         <button mat-raised-button color="primary" (click)="calcular()">Calcular</button>
+        <button mat-raised-button color="primary" class="right-button" (click)="resetar()">Resetar</button>
     </form>
 </mat-card>
 
